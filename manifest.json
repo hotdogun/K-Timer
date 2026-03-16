@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "공무원 자유시간",
+  "version": "1.4",
+  "description": "자동 뮤트 및 종료 알림음이 추가된 영상 타이머",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "trigger-timer": {
+      "suggested_key": {
+        "default": "Ctrl+Comma"
+      },
+      "description": "타이머 설정 및 실행"
+    }
+  }
+}
